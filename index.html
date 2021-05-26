@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+        <title>Jedi Council</title>
+    </head>
+
+    <body class="container">
+        <h1 class="text-success mt-4">Welcome to the Jedi Council</h1>
+        <div class="card mt-4">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="new-jedi-name">Jedi Name</label>
+                            <input type="text" class="form-control" id="new-jedi-name" placeholder="Yoda">
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="new-jedi-position">Position on Jedi Council</label>
+                            <input type="text" class="form-control" id="new-jedi-position" placeholder="Grand Master">
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-4"><button id="add-jedi" class="btn btn-success form-control">Add Jedi</button></div>
+            </div>
+        </div>
+        <table id="jedi-list" class="table table-Success table-striped mt-5 d-none">
+            <tr>
+                <th>Jedi</th>
+                <th>Position</th>
+                <th>Action</th>
+            </tr>
+        </table>
+        <script src="jedi.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    </body>
+
+</html>
